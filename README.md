@@ -15,6 +15,7 @@ TuilX provides some basic sources like:
 There are also _utility sources_ (aka _middleware_) like:
 | Source | Description |
 |--------|-------------|
+| Cacher | Adds a cache to a source |
 | Masker | Applies masking to tiles |
 | Resizer | Resizes tiles |
 | Fallback | Retrieves a tile from a fallback source if the primary source fails |
@@ -42,13 +43,21 @@ fb := source.NewMapBox("satellite-v9", mb-auth-token)
 mySource := middleware.NewFallback(primary, fb)
 ```
 
-will try to serve the requested tile from the S2 ESA layer, and if retrieval fails, it will serve the tile from MapBox satellite layer.
+will try to serve the requested tile from the Sentinel-2 ESA layer, and if retrieval fails, it will serve the tile from MapBox satellite layer.
 
 If then you are interested in tracing the tile retrieval:
 
 ```go
 primary := source.NewESAMaps("s2cloudless-2018", esa-auth-token)
 fb := source.NewMapBox("satellite-v9", mb-auth-token)
+mySource := middleware.Trace(middleware.NewFallback(primary, fb))
+```
+
+Then you may decide to add a cache to MapBox source:
+
+```go
+primary := source.NewESAMaps("s2cloudless-2018", esa-auth-token)
+fb := middleware.NewCacher(myRedis, source.NewMapBox("satellite-v9", mb-auth-token))
 mySource := middleware.Trace(middleware.NewFallback(primary, fb))
 ```
 
