@@ -15,6 +15,7 @@ type Cacher struct {
 	fallback source.Source
 }
 
+// Cache is the interface of cache implementations expected by the Cacher
 type Cache interface {
 	Get(key interface{}) (value interface{}, found bool)
 	Set(key, value interface{})
