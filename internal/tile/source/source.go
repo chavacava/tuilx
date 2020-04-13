@@ -3,7 +3,7 @@ package source
 import (
 	"context"
 
-	"github.com/chavacava/lab-tileserver/internal/tile"
+	"github.com/chavacava/tuilx/internal/tile"
 )
 
 // Source models the behavior of a tile retriever

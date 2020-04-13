@@ -6,8 +6,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/chavacava/lab-tileserver/internal/tile"
-	"github.com/chavacava/lab-tileserver/internal/tile/source"
+	"github.com/chavacava/tuilx/internal/tile"
+	"github.com/chavacava/tuilx/internal/tile/source"
 )
 
 // Delayer is a tile source that returns the tile in at least n milliseconds

@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/Nr90/imgsim"
-	"github.com/chavacava/lab-tileserver/internal/tile"
-	"github.com/chavacava/lab-tileserver/internal/tile/source"
+	"github.com/chavacava/tuilx/internal/tile"
+	"github.com/chavacava/tuilx/internal/tile/source"
 )
 
 func BenchmarkMask(b *testing.B) {

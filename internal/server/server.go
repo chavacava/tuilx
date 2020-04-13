@@ -3,7 +3,7 @@ package server
 import (
 	"net/http"
 
-	"github.com/chavacava/lab-tileserver/internal/tile/source"
+	"github.com/chavacava/tuilx/internal/tile/source"
 	"github.com/gorilla/mux"
 )
 

@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/chavacava/lab-tileserver/internal/tile"
+	"github.com/chavacava/tuilx/internal/tile"
 )
 
 type MapBox struct {

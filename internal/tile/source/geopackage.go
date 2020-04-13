@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/chavacava/lab-tileserver/internal/tile"
+	"github.com/chavacava/tuilx/internal/tile"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/patrickmn/go-cache"
 	"go.opencensus.io/trace"

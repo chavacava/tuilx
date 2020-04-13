@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/chavacava/lab-tileserver/internal/tile"
+	"github.com/chavacava/tuilx/internal/tile"
 	"github.com/gorilla/mux"
 	"go.opencensus.io/trace"
 )

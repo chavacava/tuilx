@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/chavacava/lab-tileserver/internal/tile"
-	"github.com/chavacava/lab-tileserver/internal/tile/source"
+	"github.com/chavacava/tuilx/internal/tile"
+	"github.com/chavacava/tuilx/internal/tile/source"
 )
 
 // Cacher is a tile retriever that uses a cache

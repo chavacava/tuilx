@@ -5,8 +5,8 @@ import (
 	"strconv"
 
 	"github.com/anthonynsimon/bild/transform"
-	"github.com/chavacava/lab-tileserver/internal/tile"
-	"github.com/chavacava/lab-tileserver/internal/tile/source"
+	"github.com/chavacava/tuilx/internal/tile"
+	"github.com/chavacava/tuilx/internal/tile/source"
 )
 
 type SamplingMethod int

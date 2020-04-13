@@ -11,7 +11,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/chavacava/lab-tileserver/internal/tile"
+	"github.com/chavacava/tuilx/internal/tile"
 )
 
 // MockedSource implements tile source by always returning the same tile
